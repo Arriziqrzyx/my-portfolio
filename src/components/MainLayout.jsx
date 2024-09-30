@@ -8,7 +8,7 @@ const MainLayout = () => {
     <div className="flex flex-col min-h-screen">
       <div className="flex flex-1">
         <Sidebar />
-        <main className="w-3/4 p-6">
+        <main className="w-full">
           <Outlet />
         </main>
       </div>
