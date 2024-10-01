@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Interest from "./pages/Interest";
-import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import Awards from "./pages/Awards";
 import MainLayout from "./components/MainLayout";
@@ -15,10 +14,9 @@ const router = createBrowserRouter([
     children: [
       { path: "", element: <Home /> },
       { path: "about", element: <About /> },
+      { path: "experience", element: <Experience /> },
       { path: "skills", element: <Skills /> },
       { path: "interest", element: <Interest /> },
-      { path: "education", element: <Education /> },
-      { path: "experience", element: <Experience /> },
       { path: "awards", element: <Awards /> },
     ],
   },

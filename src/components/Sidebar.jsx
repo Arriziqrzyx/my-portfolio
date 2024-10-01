@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import profilePic from "../assets/react.svg";
+import profilePic from "../assets/profil.png";
 
 const Sidebar = () => {
   return (
@@ -8,7 +8,7 @@ const Sidebar = () => {
       <img
         src={profilePic}
         alt="Profile"
-        className="w-32 h-32 rounded-full border-4 border-white mb-6"
+        className="w-32 h-32 rounded-full border-2 border-white mb-6"
       />
 
       <ul className="flex flex-col items-center gap-y-2">
@@ -30,6 +30,14 @@ const Sidebar = () => {
         </li>
         <li>
           <NavLink
+            to="/experience"
+            className={({ isActive }) => (isActive ? "font-semibold underline underline-offset-2 block uppercase" : "block uppercase")}
+          >
+            Experience
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/skills"
             className={({ isActive }) => (isActive ? "font-semibold underline underline-offset-2 block uppercase" : "block uppercase")}
           >
@@ -42,22 +50,6 @@ const Sidebar = () => {
             className={({ isActive }) => (isActive ? "font-semibold underline underline-offset-2 block uppercase" : "block uppercase")}
           >
             Interest
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/education"
-            className={({ isActive }) => (isActive ? "font-semibold underline underline-offset-2 block uppercase" : "block uppercase")}
-          >
-            Education
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/experience"
-            className={({ isActive }) => (isActive ? "font-semibold underline underline-offset-2 block uppercase" : "block uppercase")}
-          >
-            Experience
           </NavLink>
         </li>
         <li>
